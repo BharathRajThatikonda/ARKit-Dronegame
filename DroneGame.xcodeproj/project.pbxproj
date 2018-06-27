@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AFCF4761F90C439009E6F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCF4751F90C439009E6F2A /* AppDelegate.swift */; };
+		9AFCF4781F90C43A009E6F2A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4771F90C43A009E6F2A /* art.scnassets */; };
+		9AFCF47A1F90C43A009E6F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCF4791F90C43A009E6F2A /* ViewController.swift */; };
+		9AFCF47D1F90C43A009E6F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF47B1F90C43A009E6F2A /* Main.storyboard */; };
+		9AFCF47F1F90C43A009E6F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF47E1F90C43A009E6F2A /* Assets.xcassets */; };
+		9AFCF4821F90C43A009E6F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4801F90C43A009E6F2A /* LaunchScreen.storyboard */; };
+		9AFCF48D1F90C43A009E6F2A /* DroneGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCF48C1F90C43A009E6F2A /* DroneGameTests.swift */; };
+		9AFCF4981F90C43A009E6F2A /* DroneGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCF4971F90C43A009E6F2A /* DroneGameUITests.swift */; };
+		9AFCF4A61F90C669009E6F2A /* droneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCF4A51F90C669009E6F2A /* droneSceneView.swift */; };
+		9AFCF4AB1F90E3E7009E6F2A /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4A71F90D8D1009E6F2A /* down.png */; };
+		9AFCF4AC1F90E3E9009E6F2A /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4A91F90D8DC009E6F2A /* left.png */; };
+		9AFCF4AD1F90E3EC009E6F2A /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4A81F90D8D7009E6F2A /* up.png */; };
+		9AFCF4AE1F90E3EF009E6F2A /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCF4AA1F90D8E1009E6F2A /* right.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AFCF4891F90C43A009E6F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AFCF46A1F90C439009E6F2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFCF4711F90C439009E6F2A;
+			remoteInfo = DroneGame;
+		};
+		9AFCF4941F90C43A009E6F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AFCF46A1F90C439009E6F2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFCF4711F90C439009E6F2A;
+			remoteInfo = DroneGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AFCF4721F90C439009E6F2A /* DroneGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFCF4751F90C439009E6F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AFCF4771F90C43A009E6F2A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		9AFCF4791F90C43A009E6F2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AFCF47C1F90C43A009E6F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AFCF47E1F90C43A009E6F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AFCF4811F90C43A009E6F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AFCF4831F90C43A009E6F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFCF4881F90C43A009E6F2A /* DroneGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFCF48C1F90C43A009E6F2A /* DroneGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneGameTests.swift; sourceTree = "<group>"; };
+		9AFCF48E1F90C43A009E6F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFCF4931F90C43A009E6F2A /* DroneGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFCF4971F90C43A009E6F2A /* DroneGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneGameUITests.swift; sourceTree = "<group>"; };
+		9AFCF4991F90C43A009E6F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFCF4A51F90C669009E6F2A /* droneSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = droneSceneView.swift; sourceTree = "<group>"; };
+		9AFCF4A71F90D8D1009E6F2A /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		9AFCF4A81F90D8D7009E6F2A /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		9AFCF4A91F90D8DC009E6F2A /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		9AFCF4AA1F90D8E1009E6F2A /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AFCF46F1F90C439009E6F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF4851F90C43A009E6F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF4901F90C43A009E6F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AFCF4691F90C439009E6F2A = {
+			isa = PBXGroup;
+			children = (
+				9AFCF4741F90C439009E6F2A /* DroneGame */,
+				9AFCF48B1F90C43A009E6F2A /* DroneGameTests */,
+				9AFCF4961F90C43A009E6F2A /* DroneGameUITests */,
+				9AFCF4731F90C439009E6F2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AFCF4731F90C439009E6F2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCF4721F90C439009E6F2A /* DroneGame.app */,
+				9AFCF4881F90C43A009E6F2A /* DroneGameTests.xctest */,
+				9AFCF4931F90C43A009E6F2A /* DroneGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AFCF4741F90C439009E6F2A /* DroneGame */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCF4751F90C439009E6F2A /* AppDelegate.swift */,
+				9AFCF4771F90C43A009E6F2A /* art.scnassets */,
+				9AFCF4791F90C43A009E6F2A /* ViewController.swift */,
+				9AFCF4A51F90C669009E6F2A /* droneSceneView.swift */,
+				9AFCF47B1F90C43A009E6F2A /* Main.storyboard */,
+				9AFCF47E1F90C43A009E6F2A /* Assets.xcassets */,
+				9AFCF4A71F90D8D1009E6F2A /* down.png */,
+				9AFCF4A91F90D8DC009E6F2A /* left.png */,
+				9AFCF4A81F90D8D7009E6F2A /* up.png */,
+				9AFCF4AA1F90D8E1009E6F2A /* right.png */,
+				9AFCF4801F90C43A009E6F2A /* LaunchScreen.storyboard */,
+				9AFCF4831F90C43A009E6F2A /* Info.plist */,
+			);
+			path = DroneGame;
+			sourceTree = "<group>";
+		};
+		9AFCF48B1F90C43A009E6F2A /* DroneGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCF48C1F90C43A009E6F2A /* DroneGameTests.swift */,
+				9AFCF48E1F90C43A009E6F2A /* Info.plist */,
+			);
+			path = DroneGameTests;
+			sourceTree = "<group>";
+		};
+		9AFCF4961F90C43A009E6F2A /* DroneGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCF4971F90C43A009E6F2A /* DroneGameUITests.swift */,
+				9AFCF4991F90C43A009E6F2A /* Info.plist */,
+			);
+			path = DroneGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AFCF4711F90C439009E6F2A /* DroneGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFCF49C1F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGame" */;
+			buildPhases = (
+				9AFCF46E1F90C439009E6F2A /* Sources */,
+				9AFCF46F1F90C439009E6F2A /* Frameworks */,
+				9AFCF4701F90C439009E6F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroneGame;
+			productName = DroneGame;
+			productReference = 9AFCF4721F90C439009E6F2A /* DroneGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AFCF4871F90C43A009E6F2A /* DroneGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFCF49F1F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGameTests" */;
+			buildPhases = (
+				9AFCF4841F90C43A009E6F2A /* Sources */,
+				9AFCF4851F90C43A009E6F2A /* Frameworks */,
+				9AFCF4861F90C43A009E6F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AFCF48A1F90C43A009E6F2A /* PBXTargetDependency */,
+			);
+			name = DroneGameTests;
+			productName = DroneGameTests;
+			productReference = 9AFCF4881F90C43A009E6F2A /* DroneGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AFCF4921F90C43A009E6F2A /* DroneGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFCF4A21F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGameUITests" */;
+			buildPhases = (
+				9AFCF48F1F90C43A009E6F2A /* Sources */,
+				9AFCF4901F90C43A009E6F2A /* Frameworks */,
+				9AFCF4911F90C43A009E6F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AFCF4951F90C43A009E6F2A /* PBXTargetDependency */,
+			);
+			name = DroneGameUITests;
+			productName = DroneGameUITests;
+			productReference = 9AFCF4931F90C43A009E6F2A /* DroneGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AFCF46A1F90C439009E6F2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = GCS;
+				TargetAttributes = {
+					9AFCF4711F90C439009E6F2A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					9AFCF4871F90C43A009E6F2A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AFCF4711F90C439009E6F2A;
+					};
+					9AFCF4921F90C43A009E6F2A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AFCF4711F90C439009E6F2A;
+					};
+				};
+			};
+			buildConfigurationList = 9AFCF46D1F90C439009E6F2A /* Build configuration list for PBXProject "DroneGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AFCF4691F90C439009E6F2A;
+			productRefGroup = 9AFCF4731F90C439009E6F2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFCF4711F90C439009E6F2A /* DroneGame */,
+				9AFCF4871F90C43A009E6F2A /* DroneGameTests */,
+				9AFCF4921F90C43A009E6F2A /* DroneGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AFCF4701F90C439009E6F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFCF4AD1F90E3EC009E6F2A /* up.png in Resources */,
+				9AFCF4781F90C43A009E6F2A /* art.scnassets in Resources */,
+				9AFCF4AE1F90E3EF009E6F2A /* right.png in Resources */,
+				9AFCF4AB1F90E3E7009E6F2A /* down.png in Resources */,
+				9AFCF4AC1F90E3E9009E6F2A /* left.png in Resources */,
+				9AFCF4821F90C43A009E6F2A /* LaunchScreen.storyboard in Resources */,
+				9AFCF47F1F90C43A009E6F2A /* Assets.xcassets in Resources */,
+				9AFCF47D1F90C43A009E6F2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF4861F90C43A009E6F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF4911F90C43A009E6F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AFCF46E1F90C439009E6F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFCF47A1F90C43A009E6F2A /* ViewController.swift in Sources */,
+				9AFCF4761F90C439009E6F2A /* AppDelegate.swift in Sources */,
+				9AFCF4A61F90C669009E6F2A /* droneSceneView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF4841F90C43A009E6F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFCF48D1F90C43A009E6F2A /* DroneGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCF48F1F90C43A009E6F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFCF4981F90C43A009E6F2A /* DroneGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AFCF48A1F90C43A009E6F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AFCF4711F90C439009E6F2A /* DroneGame */;
+			targetProxy = 9AFCF4891F90C43A009E6F2A /* PBXContainerItemProxy */;
+		};
+		9AFCF4951F90C43A009E6F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AFCF4711F90C439009E6F2A /* DroneGame */;
+			targetProxy = 9AFCF4941F90C43A009E6F2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AFCF47B1F90C43A009E6F2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFCF47C1F90C43A009E6F2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AFCF4801F90C43A009E6F2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFCF4811F90C43A009E6F2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AFCF49A1F90C43A009E6F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AFCF49B1F90C43A009E6F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AFCF49D1F90C43A009E6F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C587C3LM4;
+				INFOPLIST_FILE = DroneGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AFCF49E1F90C43A009E6F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C587C3LM4;
+				INFOPLIST_FILE = DroneGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AFCF4A01F90C43A009E6F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DroneGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneGame.app/DroneGame";
+			};
+			name = Debug;
+		};
+		9AFCF4A11F90C43A009E6F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DroneGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneGame.app/DroneGame";
+			};
+			name = Release;
+		};
+		9AFCF4A31F90C43A009E6F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DroneGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DroneGame;
+			};
+			name = Debug;
+		};
+		9AFCF4A41F90C43A009E6F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DroneGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GCS.DroneGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DroneGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AFCF46D1F90C439009E6F2A /* Build configuration list for PBXProject "DroneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFCF49A1F90C43A009E6F2A /* Debug */,
+				9AFCF49B1F90C43A009E6F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFCF49C1F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFCF49D1F90C43A009E6F2A /* Debug */,
+				9AFCF49E1F90C43A009E6F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFCF49F1F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFCF4A01F90C43A009E6F2A /* Debug */,
+				9AFCF4A11F90C43A009E6F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFCF4A21F90C43A009E6F2A /* Build configuration list for PBXNativeTarget "DroneGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFCF4A31F90C43A009E6F2A /* Debug */,
+				9AFCF4A41F90C43A009E6F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AFCF46A1F90C439009E6F2A /* Project object */;
+}
